@@ -1,0 +1,338 @@
+2026-09-14T09:23:31Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-09-14T09:23:31Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-09-14T09:23:36Z INF +--------------------------------------------------------------------------------------------+
+2026-09-14T09:23:36Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-09-14T09:23:36Z INF |  https://organic-paintings-fate-nurses.trycloudflare.com                                   |
+2026-09-14T09:23:36Z INF +--------------------------------------------------------------------------------------------+
+2026-09-14T09:23:36Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2026-09-14T09:23:36Z INF Version 2026.9.1 (Checksum 2837888cc0f5d58f15b6dc478376de90b4d3ba5241c7947455d1e0a0df429712)
+2026-09-14T09:23:36Z INF GOOS: windows, GOVersion: go1.26.8, GoArch: amd64
+2026-09-14T09:23:36Z INF Settings: map[ha-connections:1 p:http2 protocol:http2 url:http://localhost:3000]
+2026-09-14T09:23:36Z INF cloudflared will not automatically update on Windows systems.
+2026-09-14T09:23:36Z INF Generated Connector ID: 790ee088-26c3-45f7-8b06-fc28f3db8431
+2026-09-14T09:23:36Z INF Initial protocol http2
+2026-09-14T09:23:36Z INF ICMP proxy will use 10.17.25.76 as source for IPv4
+2026-09-14T09:23:36Z INF ICMP proxy will use fe80::b1c:23c4:f367:2537 in zone Ethernet as source for IPv6
+2026-09-14T09:23:36Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2026-09-14T09:23:36Z INF ICMP proxy will use 10.17.25.76 as source for IPv4
+2026-09-14T09:23:36Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.227
+2026-09-14T09:23:36Z INF ICMP proxy will use fe80::b1c:23c4:f367:2537 in zone Ethernet as source for IPv6
+2026-09-14T09:23:36Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-09-14T09:23:46Z INF +----------------------------------------------------------------------------------------------------+
+2026-09-14T09:23:46Z INF |                                      CONNECTIVITY PRE-CHECKS                                       |
+2026-09-14T09:23:46Z INF +----------------------------------------------------------------------------------------------------+
+2026-09-14T09:23:46Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                                      |
+2026-09-14T09:23:46Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully                    |
+2026-09-14T09:23:46Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully                    |
+2026-09-14T09:23:46Z INF |  UDP Connectivity  region1.v2.argotunnel.com  FAIL    QUIC connection failed                       |
+2026-09-14T09:23:46Z INF |  UDP Connectivity  region2.v2.argotunnel.com  FAIL    QUIC connection failed                       |
+2026-09-14T09:23:46Z INF |  TCP Connectivity  region1.v2.argotunnel.com  FAIL    HTTP/2 connection is blocked or unreachable  |
+2026-09-14T09:23:46Z INF |  TCP Connectivity  region2.v2.argotunnel.com  FAIL    HTTP/2 connection is blocked or unreachable  |
+2026-09-14T09:23:46Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable                             |
+2026-09-14T09:23:46Z INF |  ERROR: Allow outbound QUIC traffic on port 7844 or use HTTP2.                                     |
+2026-09-14T09:23:46Z INF |  ERROR: Allow outbound QUIC traffic on port 7844 or use HTTP2.                                     |
+2026-09-14T09:23:46Z INF |  ERROR: Allow outbound TCP on port 7844.                                                           |
+2026-09-14T09:23:46Z INF |  ERROR: Allow outbound TCP on port 7844.                                                           |
+2026-09-14T09:23:46Z INF |                                                                                                    |
+2026-09-14T09:23:46Z INF |  SUMMARY: Environment has critical failures. cloudflared may not be able to establish a tunnel.    |
+2026-09-14T09:23:46Z INF +----------------------------------------------------------------------------------------------------+
+2026-09-14T09:23:46Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=29431021-8775-418a-a0d3-be1b872630fb status=pass target=region1.v2.argotunnel.com
+2026-09-14T09:23:46Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=29431021-8775-418a-a0d3-be1b872630fb status=pass target=region2.v2.argotunnel.com
+2026-09-14T09:23:46Z INF precheck component="UDP Connectivity" details="QUIC connection failed" run_id=29431021-8775-418a-a0d3-be1b872630fb status=fail target=region1.v2.argotunnel.com
+2026-09-14T09:23:46Z INF precheck component="UDP Connectivity" details="QUIC connection failed" run_id=29431021-8775-418a-a0d3-be1b872630fb status=fail target=region2.v2.argotunnel.com
+2026-09-14T09:23:46Z INF precheck component="TCP Connectivity" details="HTTP/2 connection is blocked or unreachable" run_id=29431021-8775-418a-a0d3-be1b872630fb status=fail target=region1.v2.argotunnel.com
+2026-09-14T09:23:46Z INF precheck component="TCP Connectivity" details="HTTP/2 connection is blocked or unreachable" run_id=29431021-8775-418a-a0d3-be1b872630fb status=fail target=region2.v2.argotunnel.com
+2026-09-14T09:23:46Z INF precheck component="Cloudflare API" details="API is reachable" run_id=29431021-8775-418a-a0d3-be1b872630fb status=pass target=api.cloudflare.com:443
+2026-09-14T09:23:46Z INF precheck complete hard_fail=true run_id=29431021-8775-418a-a0d3-be1b872630fb
+2026-09-14T09:23:51Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.227:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.227
+2026-09-14T09:23:51Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.227:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.227
+2026-09-14T09:23:51Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.227
+2026-09-14T09:23:52Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:24:07Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:24:07Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:24:07Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:24:09Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:24:24Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.43:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:24:24Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.43:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:24:24Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:24:28Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:24:43Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:24:43Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:24:43Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:24:46Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:25:01Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.33:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:25:01Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.33:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:25:01Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:25:19Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:25:34Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:25:34Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:25:34Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:25:44Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:25:59Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.33:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:25:59Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.33:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:25:59Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:26:24Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:26:39Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.47:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:26:39Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.47:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:26:39Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:26:53Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:27:08Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.33:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:27:08Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.33:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:27:08Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:27:10Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.7
+2026-09-14T09:27:25Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.7:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.7
+2026-09-14T09:27:25Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.7:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.7
+2026-09-14T09:27:25Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.7
+2026-09-14T09:27:44Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:27:59Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.47:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:27:59Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.47:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:27:59Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:28:26Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:28:41Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.57:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:28:41Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.57:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:28:41Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:28:59Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:29:14Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.33:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:29:14Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.33:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:29:14Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.33
+2026-09-14T09:29:38Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:29:53Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.73:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:29:53Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.73:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:29:53Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:29:53Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:30:08Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:30:08Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:30:08Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:30:11Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:30:26Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.47:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:30:26Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.47:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:30:26Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:30:50Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:31:05Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:31:05Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:31:05Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:31:10Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:31:25Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:31:25Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:31:25Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:31:42Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:31:57Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.43:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:31:57Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.43:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:31:57Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:32:13Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:32:28Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:32:28Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:32:28Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:32:29Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:32:44Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:32:44Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:32:44Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:32:56Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:33:11Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.37:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:33:11Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.37:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:33:11Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:33:20Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:33:35Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:33:35Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:33:35Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:33:38Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:33:53Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.47:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:33:53Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.47:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:33:53Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:34:22Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:34:37Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:34:37Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:34:37Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:35:09Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:35:24Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:35:24Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:35:24Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:35:47Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:36:02Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.43:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:36:02Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.43:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:36:02Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:36:12Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:36:27Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:36:27Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:36:27Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:36:50Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:37:05Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.53:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:37:05Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.53:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:37:05Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:37:32Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:37:47Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:37:47Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:37:47Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:38:00Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:38:15Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:38:15Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:38:15Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:38:18Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.27
+2026-09-14T09:38:33Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.27:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.27
+2026-09-14T09:38:33Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.27:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.27
+2026-09-14T09:38:33Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.27
+2026-09-14T09:38:54Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:39:09Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:39:09Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:39:09Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:39:13Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:39:28Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:39:28Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:39:28Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:39:55Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:40:10Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:40:10Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:40:10Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:40:31Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.13
+2026-09-14T09:40:46Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.13:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.13
+2026-09-14T09:40:46Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.13:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.13
+2026-09-14T09:40:46Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.13
+2026-09-14T09:41:03Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:41:18Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.193:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:41:18Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.193:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:41:18Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:41:22Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:41:37Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.37:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:41:37Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.37:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:41:37Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:42:01Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.67
+2026-09-14T09:42:16Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.67:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.67
+2026-09-14T09:42:16Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.67:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.67
+2026-09-14T09:42:16Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.67
+2026-09-14T09:42:26Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:42:41Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:42:41Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:42:41Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:42:55Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:43:10Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.53:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:43:10Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.53:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:43:10Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:43:38Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.233
+2026-09-14T09:43:53Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.233:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.233
+2026-09-14T09:43:53Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.233:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.233
+2026-09-14T09:43:53Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.233
+2026-09-14T09:44:20Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:44:35Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.37:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:44:35Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.37:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:44:35Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.37
+2026-09-14T09:44:54Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:45:09Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:45:09Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:45:09Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:45:20Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:45:35Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:45:35Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:45:35Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:45:46Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:46:01Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.57:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:46:01Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.57:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:46:01Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:46:33Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:46:48Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:46:48Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:46:48Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:47:03Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:47:18Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:47:18Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:47:18Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:47:19Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:47:34Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.53:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:47:34Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.53:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:47:34Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:47:47Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:48:02Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.47:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:48:02Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.47:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:48:02Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.47
+2026-09-14T09:48:10Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:48:25Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:48:25Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:48:25Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:48:53Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:49:08Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.193:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:49:08Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.193:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:49:08Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:49:14Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:49:29Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.73:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:49:29Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.73:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:49:29Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:49:32Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:49:47Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.57:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:49:47Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.57:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:49:47Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:50:00Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:50:15Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:50:15Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:50:15Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:50:44Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:50:59Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.73:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:50:59Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.73:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:50:59Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.73
+2026-09-14T09:51:10Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:51:25Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:51:25Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:51:25Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:51:25Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:51:40Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.43:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:51:40Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.43:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:51:40Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.43
+2026-09-14T09:51:41Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:51:56Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:51:56Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:51:56Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:52:22Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:52:37Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.53:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:52:37Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.53:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:52:37Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:53:02Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:53:17Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:53:17Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:53:17Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:53:21Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:53:36Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:53:36Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:53:36Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:53:46Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.67
+2026-09-14T09:54:01Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.67:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.67
+2026-09-14T09:54:01Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.67:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.67
+2026-09-14T09:54:01Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.67
+2026-09-14T09:54:06Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.7
+2026-09-14T09:54:21Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.7:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.7
+2026-09-14T09:54:21Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.7:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.7
+2026-09-14T09:54:21Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.7
+2026-09-14T09:54:27Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:54:42Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:54:42Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:54:42Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:54:50Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:55:05Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.193:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:55:05Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.193:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:55:05Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.193
+2026-09-14T09:55:21Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:55:36Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.57:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:55:36Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.57:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:55:36Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.57
+2026-09-14T09:55:44Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:55:59Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:55:59Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.113:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:55:59Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-14T09:56:27Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:56:42Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.53:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:56:42Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.53:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:56:42Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.53
+2026-09-14T09:57:00Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:57:15Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:57:15Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:57:15Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:57:31Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:57:46Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:57:46Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.23:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:57:46Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-09-14T09:57:49Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.13
+2026-09-14T09:58:04Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.200.13:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.13
+2026-09-14T09:58:04Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.200.13:7844: i/o timeout" connIndex=0 event=0 ip=198.41.200.13
+2026-09-14T09:58:04Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.13
+2026-09-14T09:58:26Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:58:41Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:58:41Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: i/o timeout" connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:58:41Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-09-14T09:58:52Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.47
